@@ -16,20 +16,20 @@ public class InputOutputExample {
         // Consume the leftover newline
         scanner.nextLine();
         
-        // Prompt the user for a string
+        // Prompt the user for a string (sentence or word)
         System.out.print("Enter a word or sentence: ");
         String stringInput = scanner.nextLine();
         
-        // Display the inputs using different output methods
-        System.out.println("\nYour integer: " + integerInput);
+        // Display the results
+        System.out.println("Your integer: " + integerInput);
         
-        // Using printf to format the decimal number to 2 decimal places
+        // Use printf to format the decimal number to 2 decimal places
         System.out.printf("Your decimal number: %.2f\n", decimalInput);
         
-        // Display the string input
+        // Display the string as entered
         System.out.println("Your string: " + stringInput);
         
-        // Close the scanner to prevent resource leak
+        // Close the scanner to prevent resource leaks
         scanner.close();
     }
 }
